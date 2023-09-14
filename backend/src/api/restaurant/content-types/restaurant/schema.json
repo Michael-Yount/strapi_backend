@@ -28,6 +28,12 @@
         "videos",
         "audios"
       ]
+    },
+    "dishes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dish.dish",
+      "mappedBy": "restaurant"
     }
   }
 }
