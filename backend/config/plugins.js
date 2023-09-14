@@ -14,5 +14,17 @@ module.exports = ({ env }) => ({
         },
       },
     },
-    // add graphql pugin here...
+    graphql: {
+      config: {
+        endpoint: "/graphql",
+        shadowCRUD: true,
+        playgroundAlways: true,
+        depthLimit: 10,
+        amountLimit: 100,
+        apolloServer: {
+          tracing: false,
+          introspection: true,
+        },
+      },
+    },// add graphql pugin here...
   });
