@@ -26,5 +26,8 @@ module.exports = ({ env }) => ({
           introspection: true,
         },
       },
-    },// add graphql pugin here...
+    },
+    'strapi-google-auth': {
+      enabled: true,
+  },// add graphql pugin here...
   });
